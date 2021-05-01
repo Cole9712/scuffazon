@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: 0;
 }
 .container {
     display: flex;
@@ -15,13 +16,16 @@
 li{
     display: flex;
     text-align: center;
+    padding: 0 2.5vw;
 }
 
 .amazon-picture{
     width: 5vw;
     height: 5vw;
 }
-
+.search-bar{
+    padding: 0 10vw;
+}
 .text-area{
     width: 50vw;
     height: 2.5vw;
@@ -35,4 +39,15 @@ li{
     border-top-right-radius: 10%;
     border-bottom-right-radius: 10%;
     border-style: none;
+}
+
+.cart{
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: baseline;
+}
+
+.cart-image{
+    width: 2.5vw;
+    height: 2.5vw;
 }
