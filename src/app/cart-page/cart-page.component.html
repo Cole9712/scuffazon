@@ -1,9 +1,17 @@
-<div id='body' *ngFor="let p of productList">
+
+<h1 class="body">Shopping Cart</h1>
+<div class='body' *ngFor="let p of productList">
+    
     <div class="card">
         <img src="../../assets/memes/{{p.product.picSrc}}" alt="">
         <h2>{{p.product.name}}</h2>
-        <p class="priceDisplay">{{p.product.price}}</p>
+        <p class="priceDisplay">{{p.product.price.toFixed(2)}}</p>
         <img class="doge" src="../../assets/dogecoin.jpeg" alt="">
         
     </div>
+</div>
+<div class='subtotal'>
+    Subtotal:
+    <img src="../../assets/dogecoin.jpeg" alt="doge">
+    <p>{{cs.subtotal()}}</p>
 </div>
