@@ -1,11 +1,25 @@
-<div class="card">
-	<img src="../../assets/memes/{{ product.picSrc }}" class="card-img-top">
-	<div class="card-body">
-		<p class="card-title h5">{{ product.name }}<p>
-		<p class="card-text h5">
-			<img src="../../assets/dogecoin.jpeg" width="20px">
-			{{ product.price }}
-		</p>
-		<p class="card-text font-weight-bold"><span class="tick">✓</span> <span class="prime">prime</span></p>
-	</div>
-</div>
+<article class="card">
+
+	<a class="anchor" routerLink="/item/{{ product.id }}">
+		<img src="../../assets/memes/{{ product.picSrc }}" class="card-img-top">
+	</a>
+
+	<section class="card-body">
+
+		<a class="anchor" routerLink="/item/{{ product.id }}">
+			<p class="card-title h5">{{ product.name }}<p>
+		</a>
+
+		<a class="anchor" routerLink="/item/{{ product.id }}">
+			<p class="card-text h5">
+				<img src="../../assets/dogecoin.jpeg" width="20px">
+				{{ product.price }}
+			</p>
+		</a>
+
+		<br>
+		<p class="card-text font-weight-bold"><span class="tick">✓</span><span class="prime">scuffed</span></p>
+	
+	</section>
+
+</article>
