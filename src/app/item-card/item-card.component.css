@@ -2,10 +2,22 @@
 
 .card
 {
+	width: 20vw;
 	margin: 10px;
+
+	font-family: "Amazon Ember", Sans-serif;
 }
 
-.card-img-top
+.anchor, .anchor:hover
 {
-	width: 200px;
+	text-decoration: none !important;
+	color: #000000;
 }
+.anchor:hover{ cursor: pointer; }
+
+.card-title:hover{ color: #c45500; }
+
+.tick{ color: #f7961e; }
+
+.prime{ color: #3191c1; }
+

@@ -6,8 +6,12 @@ import { Product } from './product'
 })
 export class ProductsService {
   allProducts: Product[] = [
-    new Product('drake Lil Yachty', 100, '', 'drakeLilYachtyTemplate.png', 'Template'),
-    new Product('Average Fan Vs Average Enjoyer', 100, '', 'AverageFanVsAverageEnjoyer.jpg', 'Template'),
+    new Product('Drake Lil Yachty', 100, '', 'drakeLilYachtyTemplate.png', 'Template', false),
+    new Product('Average Fan Vs Average Enjoyer', 100, '', 'AverageFanVsAverageEnjoyer.jpg', 'Template', false),
+    new Product('Amazon At Home', 500, '', 'AmazonAtHome.png', 'Meme', true),
+	new Product('Hackathon Programmers Vs Speedrunners', 200, '', 'HackathonProgrammersVsSpeedrunners.png', 'Meme', true),
+	new Product('I Recieve You Receive', 100, '', 'iRecieveYouReceive.png', 'Template', false),
+	new Product('Nobody Is Born Cool Scuffed Hacks', 200, '', 'nobodyIsBornCoolScuffedHacks.jpg.png', 'Meme', true),
   ];
   
   constructor() { }
