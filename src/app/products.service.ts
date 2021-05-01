@@ -6,8 +6,7 @@ import { Product } from './product'
 })
 export class ProductsService {
   allProducts: Product[] = [
-    new Product('drake Lil Yachty', 100, ' ', 'drakeLilYachtyTemplate.png', 'Template'),
-    new Product('Average Fan Vs Average Enjoyer', 100, ' ', 'AverageFanVsAverageEnjoyer.jpg', 'Template')
+    new Product('drakeLilYachty')
   ];
   
   constructor() { }
