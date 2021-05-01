@@ -38,13 +38,14 @@
 
 .right {
     display: flex;
+    position: relative;
     flex-direction: column;
     flex: 1 1 20%;
     border: 1px solid var(--border-color);
     border-radius: 5px;
     min-width: 200px;
     height: 100%;
-
+    top: 0.8rem;
 }
 
 .price-container {
