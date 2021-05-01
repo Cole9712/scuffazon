@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ProductsService } from '../products.service';
 
 @Component
@@ -9,8 +9,11 @@ import { ProductsService } from '../products.service';
 } )
 
 export class HomePageComponent 
-{
-	ps: ProductsService = new ProductsService();
+{	
+	productList;
+	constructor(private ps: ProductsService) { }
 
-	constructor() { }
+	ngOnInit() {
+		this.productList = this.ps.allProducts;
+	}
 }
