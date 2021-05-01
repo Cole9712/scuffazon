@@ -8,13 +8,16 @@
 	font-family: "Amazon Ember", Sans-serif;
 }
 
-.tick
+.anchor, .anchor:hover
 {
-	color: #f7961e;
+	text-decoration: none !important;
+	color: #000000;
 }
+.anchor:hover{ cursor: pointer; }
 
-.prime
-{
-	color: #3191c1;
-}
+.card-title:hover{ color: #c45500; }
+
+.tick{ color: #f7961e; }
+
+.prime{ color: #3191c1; }
 
