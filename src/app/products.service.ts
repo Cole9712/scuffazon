@@ -10,6 +10,6 @@ export class ProductsService {
   constructor() { }
 
   getProductById(id: string) {
-    return this.allProducts.find(e => (e.))
+    return this.allProducts.find(e => (e.id === parseInt(id)));
   }
 }
