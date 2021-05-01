@@ -9,6 +9,7 @@ import { CartPageComponent } from './cart-page/cart-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ItemCardComponent } from './item-card/item-card.component';
 import { CartItemComponent } from './cart-page/cart-item/cart-item.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CartItemComponent } from './cart-page/cart-item/cart-item.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
