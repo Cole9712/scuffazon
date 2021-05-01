@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    background-color: #131921;
+    list-style-type:none;
+}
+
+li{
+    display: flex;
+    text-align: center;
+}
+
+.amazon-picture{
+    width: 5vw;
+    height: 5vw;
+}
+
+.text-area{
+    width: 50vw;
+    height: 2.5vw;
+    font-size: 25px;
+    border-style: none;
+}
+
+.amazon-search-button{
+    width: 2.5vw;
+    height: 2.5vw;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border-style: none;
+}
