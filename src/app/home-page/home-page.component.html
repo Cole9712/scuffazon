@@ -1,5 +1,6 @@
-<div id="card-container">
-	<app-item-card 
+<div id="card-container" class="row row-cols-1 row-cols-md-4">
+	<app-item-card
+	 class="col mb-4"
 	 *ngFor="let p of ( productList )" 
 	 [product]="p"
 	></app-item-card>

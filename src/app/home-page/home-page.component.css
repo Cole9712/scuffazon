@@ -1,17 +1,3 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 
-/* flexbox */
-#card-container
-{
-	max-width: 1500px;
-	width: 100%;
-	margin: auto;
-	padding: 10px;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-
-	background-color: #eaeded;
-}

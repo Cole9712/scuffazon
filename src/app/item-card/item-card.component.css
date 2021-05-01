@@ -1,10 +1,8 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
-.card
+article
 {
 	width: 20vw;
-	margin: 10px;
-
 	font-family: "Amazon Ember", Sans-serif;
 }
 
