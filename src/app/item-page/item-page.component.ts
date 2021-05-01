@@ -10,11 +10,13 @@ import { ActivatedRoute } from '@angular/router';
 export class ItemPageComponent implements OnInit {
 
   constructor(private ar: ActivatedRoute, private ps: ProductsService) { }
+  
   productID;
-  a = 'aloha';
+  product;
+
   ngOnInit(): void {
     this.productID = this.ar.snapshot.paramMap.get('id');
-    this.ps.getProductById(this.productID);
+    this.product = this.ps.getProductById(this.productID);
   }
 
 }
