@@ -1,24 +1,42 @@
-#body {
+.body {
     width: 1500px;
-    margin: 0 auto;
+    margin: 10px auto;
+    
+}
+
+*{
     font-family: "Amazon Ember", Helvetica, sans-serif;
+}
+
+h1 {
+    padding-bottom: 10px;
+    font-weight: lighter;
+    border-bottom: 1px solid #DDD;
 }
 
 img {
     height: 200px;
 }
 
+.card {
+    margin: 0 0;
+    max-height: 250px;
+    max-width: 1100px;
+    border-bottom: 1px solid #DDD;
+}
+
 h2 {
     color: #007185;
     position: relative;
     font-size: larger;
-    top: -185px;
-    right: -220px;
+    top: -155px;
+    right: -20px;
+    display:inline-block;
 }
 
 .priceDisplay {
     position: relative;
-    top: -225px;
+    top: -215px;
     right: -1000px;
     color: #0F1111 !important;
     font-size: large;
@@ -30,6 +48,26 @@ h2 {
     max-width:30px;
     max-height:30px;
     position: relative;
-    top: -270px;
+    display:inline-block;
+    top: -260px;
     right: -965px;
+}
+
+.subtotal {
+    width:1500px;
+    margin: 0 auto;
+    font-size: larger;
+    position: relative;
+    right: -900px;
+}
+
+.subtotal p{
+    display:inline-block;
+    font-weight: bold;
+}
+
+.subtotal img {
+    display:inline-block;
+    width:30px;
+    height: 30px;
 }
