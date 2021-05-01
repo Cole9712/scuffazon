@@ -28,6 +28,9 @@ export class CartService {
     }
     return subtotal.toFixed(2);
   }
+  getCartItemById(id: string) {
+    return this.products.find(e => (e.product.id === parseInt(id)));
+  }
 }
 
 export class CartItem {

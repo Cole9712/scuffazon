@@ -7,7 +7,22 @@
         <h2>{{p.product.name}}</h2>
         <p class="priceDisplay">{{p.product.price.toFixed(2)}}</p>
         <img class="doge" src="../../assets/dogecoin.jpeg" alt="">
-        
+        <div class="quantity"> quantity: 
+            <select (change)="onSelectChange($event.target.value, p)" name="qty" id="qty">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option selected value="dynamic">{{p.quantity}}</option>
+            </select>
+        </div>
+        <input (click)="onDelete(p)" class="delete" name="delete" value="Delete" type="submit">
     </div>
 </div>
 <div class='subtotal'>
