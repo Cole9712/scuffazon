@@ -1,1 +1,9 @@
-<p>cart-page works!</p>
+<div id='body' *ngFor="let p of productList">
+    <div class="card">
+        <img src="../../assets/memes/{{p.product.picSrc}}" alt="">
+        <h2>{{p.product.name}}</h2>
+        <p class="priceDisplay">{{p.product.price}}</p>
+        <img class="doge" src="../../assets/dogecoin.jpeg" alt="">
+        
+    </div>
+</div>
