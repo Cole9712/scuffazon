@@ -5,7 +5,9 @@ import { Product } from './product'
   providedIn: 'root'
 })
 export class ProductsService {
-  allProducts: Product[] = [];
+  allProducts: Product[] = [
+    new Product('drakeLilYachty')
+  ];
   
   constructor() { }
 
