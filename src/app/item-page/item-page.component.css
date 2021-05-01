@@ -9,6 +9,7 @@
     display: flex;
     max-width: 1500px;
     padding: 0.5rem;
+    letter-spacing: 1px;
 }
 
 .left,
@@ -31,8 +32,30 @@
     border-radius: 5px;
 }
 
+.price {
+    margin: 1rem 0;
+    color: #B12704;
+}
+
+.delivery {
+    margin-bottom: 1rem;
+}
+
+.stock-left {
+    margin-bottom: 1rem;
+}
+
+.quantity-container {
+    margin-bottom: 1rem;
+}
+
+.quantity-label {
+
+}
+
 .btn {
     display: block;
+    margin-bottom: 0.5rem;
     height: 2rem;
     width: 100%;
     border-radius: 30px;
