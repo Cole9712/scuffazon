@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ItemPageComponent } from './item-page/item-page.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { ItemCardComponent } from './item-card/item-card.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { HomePageComponent } from './home-page/home-page.component';
     ItemPageComponent,
     CartPageComponent,
     HomePageComponent,
+    ItemCardComponent,
   ],
   imports: [
     BrowserModule,
