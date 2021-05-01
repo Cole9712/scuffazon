@@ -1,8 +1,11 @@
-<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Amazon Ember", Helvetica, sans-serif;
+    font-size: 1rem;
+    --product-name-max-width: 95%;
+    --border-color: #c5c5c5;
 }
 
 .container {
@@ -21,19 +24,91 @@
 
 .left {
     flex: 1 1 40%;
+    min-width: 386px;
+}
+
+.product-img {
+    width: 100%;
 }
 
 .middle {
     flex: 1 1 40%;
+    min-width: 430px;
 }
 
 .right {
+    display: flex;
+    flex-direction: column;
     flex: 1 1 20%;
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     border-radius: 5px;
+    min-width: 200px;
+    height: 100%;
+
+}
+
+.price-container {
+    position: relative;
+    white-space: nowrap;
+}
+
+.price-label > h3 {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.dogecoin-img {
+    margin-right: 0.2rem;
+    transform: translateY(10%);
+}
+
+.product-name {
+    font-size: 2rem;
+    font-weight: 500;
+    max-width: var(--product-name-max-width);
+    margin-bottom: 0.3rem;
+    line-height: 2.3rem;
+}
+
+.rating-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.rating-img {
+    margin-right: 1rem;
+}
+
+.about-item {
+    margin-bottom: 0.5rem;
+}
+
+.num-of-reviews {
+    letter-spacing: 0.3px;
+}
+
+.middle-container > .price-container::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    transform: translate(0, -50%);
+    width: var(--product-name-max-width);
+    height: 1px;
+    background-color: var(--border-color);
+}
+
+.list {
+    padding-left: 1rem;
+    max-width: var(--product-name-max-width);
+}
+
+.list-item {
+    margin-bottom: 0.3rem;
 }
 
 .price {
+    display: inline-block;
     margin: 1rem 0;
     color: #B12704;
 }
@@ -43,21 +118,49 @@
 }
 
 .stock-left {
+    color: #00762F;
     margin-bottom: 1rem;
 }
 
 .quantity-container {
     margin-bottom: 1rem;
+    white-space: nowrap
 }
 
 .quantity-label {
+    margin-right: 0.5rem;
+}
 
+.quantity-input {
+    width: 2rem;
 }
 
 .btn {
     display: block;
+    cursor: pointer;
     margin-bottom: 0.5rem;
     height: 2rem;
     width: 100%;
     border-radius: 30px;
+    border: none;
+}
+
+.add-to-cart {
+    background: #FFD814;
+}
+
+.add-to-cart:hover {
+    background: #F7CA00
+}
+
+.buy-now {
+    background: #FFA41C;
+}
+
+.buy-now:hover {
+    background: #FA8900;
+}
+
+.sold-and-fulfilled {
+    line-height: 1.3rem;
 }
