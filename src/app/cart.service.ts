@@ -13,8 +13,15 @@ export class CartService {
     new CartItem(new Product('Average Fan Vs Average Enjoyer', 100.0, '', 'AverageFanVsAverageEnjoyer.jpg', 'Template'), 2),
   ];
   constructor(private ps: ProductsService) { }
+
   add(id: string, quantity: number){
-    this.products.push(new CartItem(this.ps.getProductById(id), quantity));
+    let tmp = this.getCartItemById(id);
+    if ( tmp == null) {
+      this.products.push(new CartItem(this.ps.getProductById(id), quantity));
+    } else {
+      tmp.quantity += quantity;
+    }
+    
   }
   delete(id: string) {
     this.products = this.products.filter(function(obj) {
@@ -36,7 +43,7 @@ export class CartService {
 export class CartItem {
   product: Product;
   quantity: number;
-  constructor(product: Product, quantity) {
+  constructor(product: Product, quantity:number) {
     this.product = product;
     this.quantity = quantity;
   }
