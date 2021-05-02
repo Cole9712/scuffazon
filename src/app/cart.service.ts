@@ -13,6 +13,9 @@ export class CartService {
 
   init(){
     this.products = JSON.parse(localStorage.getItem('cart'));
+    if (!this.products) {
+      this.products = [];
+    }
   }
 
   add(id: string, quantity: number){
