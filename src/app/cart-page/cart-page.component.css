@@ -16,6 +16,7 @@ h1 {
 
 img {
     height: 200px;
+    min-width: 200px;
 }
 
 .card {
@@ -51,6 +52,7 @@ h2 {
     display:inline-block;
     top: -260px;
     right: -965px;
+    min-width: 0;
 }
 
 .subtotal {
@@ -70,6 +72,7 @@ h2 {
     display:inline-block;
     width:30px;
     height: 30px;
+    min-width: 0;
 }
 
 .quantity {
