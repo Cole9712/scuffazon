@@ -13,9 +13,8 @@ export class NavbarComponent implements OnInit {
 	ngOnInit(): void {
 	}
 
-	search( key: string  ): void
+	search( key: string ): void
 	{
-		console.log( key );	
 		this.ps.sendKeyword( key );
 	}
 
