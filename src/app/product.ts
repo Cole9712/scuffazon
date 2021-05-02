@@ -6,8 +6,10 @@ export class Product {
     category: string;
     id: number;
     scuffed: boolean;
+	rating: number;
+	stars: number;
     static count: number = 0;
-    constructor(name?: string, price?: number, description?: string, picSrc?: string, category?: string, scuffed?:boolean){
+    constructor(name?: string, price?: number, description?: string, picSrc?: string, category?: string, scuffed?:boolean, rating?: number, stars?: number){
         Product.count ++;
         this.id = Product.count;
         this.description = description;
@@ -16,5 +18,7 @@ export class Product {
         this.price = price;
         this.category = category;
         this.scuffed = scuffed;
+		this.rating = rating;
+		this.stars = stars;
     }
 }
