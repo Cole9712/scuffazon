@@ -19,11 +19,12 @@ export class CartPageComponent implements OnInit {
 
   onSelectChange(value, p) {
     this.cs.getCartItemById(p.product.id).quantity = value;
-    this.route.navigateByUrl['/cart'];
+    this.productList = this.cs.products;
   }
 
   onDelete(p) {
     this.cs.delete(p.product.id);
+    this.productList = this.cs.products;
   }
 
 }

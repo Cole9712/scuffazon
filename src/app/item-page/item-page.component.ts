@@ -24,7 +24,7 @@ export class ItemPageComponent implements OnInit {
   addToCart(){
     console.log(this.qty);
     this.cs.add(this.productID, parseInt(this.qty.nativeElement.value));
-    this.router.navigateByUrl["/cart"];
+    this.router.navigate['/cart'];
   }
 
 }

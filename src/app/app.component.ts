@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CartService } from './cart.service'
 
 @Component({
   selector: 'app-root',
@@ -8,5 +9,9 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'scuffazon';
-  
+  constructor(private cs: CartService){}
+
+  ngOnInit() {
+    this.cs.init();
+  }
 }

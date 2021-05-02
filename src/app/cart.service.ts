@@ -8,18 +8,21 @@ import { ProductsService } from './products.service'
 
 export class CartService {
   // products: CartItem[] = [];
-  products: CartItem[] = [
-    new CartItem(new Product('drake Lil Yachty', 100.0, '', 'drakeLilYachtyTemplate.png', 'Template'), 5),
-    new CartItem(new Product('Average Fan Vs Average Enjoyer', 100.0, '', 'AverageFanVsAverageEnjoyer.jpg', 'Template'), 2),
-  ];
+  products: CartItem[] = [];
   constructor(private ps: ProductsService) { }
+
+  init(){
+    this.products = JSON.parse(localStorage.getItem('cart'));
+  }
 
   add(id: string, quantity: number){
     let tmp = this.getCartItemById(id);
     if ( tmp == null) {
       this.products.push(new CartItem(this.ps.getProductById(id), quantity));
+      localStorage.setItem('cart', JSON.stringify(this.products));
     } else {
       tmp.quantity += quantity;
+      localStorage.setItem('cart', JSON.stringify(this.products));
     }
     
   }
@@ -27,6 +30,7 @@ export class CartService {
     this.products = this.products.filter(function(obj) {
       return obj.product.id != parseInt(id);
     })
+    localStorage.setItem('cart', JSON.stringify(this.products));
   }
   subtotal() {
     var subtotal = 0.0;
