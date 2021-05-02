@@ -6,8 +6,8 @@
 
     </li>
     <li class="search-bar">
-        <input type="text" width="100" height="100" class="text-area">
-        <input type="image" src="../../assets/AmazonSearchIcon.png" class="amazon-search-button">
+		<input type="search" width="100" height="100" class="text-area" (search)="search( $event.target.value )">
+		<input type="image" src="../../assets/AmazonSearchIcon.png" class="amazon-search-button">
     </li>
     <li class="cart">
         <a routerLink='/cart'>

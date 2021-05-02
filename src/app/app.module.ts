@@ -10,6 +10,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { ItemCardComponent } from './item-card/item-card.component';
 import { CartItemComponent } from './cart-page/cart-item/cart-item.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SearchPipe } from './search.pipe';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomePageComponent,
     ItemCardComponent,
     CartItemComponent,
+    SearchPipe,
   ],
   imports: [
     BrowserModule,

@@ -11,10 +11,17 @@ import { ProductsService } from '../products.service';
 export class HomePageComponent 
 {	
 	productList;
+	keyword = '';
 
 	constructor(private ps: ProductsService) { }
 
 	ngOnInit() {
 		this.productList = this.ps.allProducts;
+		this.ps.keyword.subscribe( res => this.keyword = res );
+	}
+
+	setKeyword( key: string ): void
+	{
+		this.keyword = key;
 	}
 }

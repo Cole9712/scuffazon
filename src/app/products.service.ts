@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Product } from './product'
+import { Product } from './product';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -15,9 +16,16 @@ export class ProductsService {
 	new Product('Programmming Is Hard', 1000, '', 'ProgrammmingIsHard.png', 'Meme', true, 9239, 5)
   ];
   
+  keyword = new Subject<string>();
+
   constructor() { }
 
   getProductById(id: string) {
     return this.allProducts.find(e => (e.id === parseInt(id)));
+  }
+
+  sendKeyword( key: string ): void
+  {
+	  this.keyword.next( key );
   }
 }
