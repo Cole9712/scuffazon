@@ -7,6 +7,7 @@ Based on the theme of this hackathon,  we want to implement some real-world stuf
 It sells meme, you can buy it using your dogecoin.
 
 ## How we built it
+The project is built on **Angular**.
 Make sure have Node.js installed, `npm i`
 then `ng serve -o`
 
