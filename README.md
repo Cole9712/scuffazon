@@ -1,5 +1,5 @@
 # Scuffazon
-A shopping site to buy memes by paying dogcoins
+A eCommerce website to buy memes by paying dogcoins
 
 ## Inspiration
 Based on the theme of this hackathon,  we want to implement some real-world stuff but in a scuffed way. So we choose an eCommerce website.
